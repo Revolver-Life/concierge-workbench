@@ -1,11 +1,21 @@
 <template>
   <div id="app">
     <Heading/>
+    <div class="columns is-gapless is-multiline is-mobile">
+
+    <div class="is-one-quarter"> <!--SIDEBAR-->
+    <Nav/>
+    </div>
+    <div class="column"> <!--MAIN-->
     <div id="nav">
+
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
+    </div>
+      </div>
+
   </div>
 </template>
 
@@ -33,7 +43,8 @@
 </style>
 <script>
 import Heading from "@/components/Heading";
+import Nav from "@/components/Nav"
 export default {
-  components: {Heading}
+  components: {Heading, Nav}
 }
 </script>
