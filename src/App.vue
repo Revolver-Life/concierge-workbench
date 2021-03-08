@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Heading/>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -30,3 +31,9 @@
   color: #42b983;
 }
 </style>
+<script>
+import Heading from "@/components/Heading";
+export default {
+  components: {Heading}
+}
+</script>
