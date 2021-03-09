@@ -38,7 +38,7 @@
 /*}*/
 
 #sidebar{
-  background-color: ghostwhite;
+  background-color: #F5f5f2;
   height: 800px;
   width: 200px;
 }
