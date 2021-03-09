@@ -7,11 +7,7 @@
     <Nav/>
     </div>
     <div class="column"> <!--MAIN-->
-<!--    <div id="nav">-->
 
-<!--&lt;!&ndash;      <router-link to="/">Home</router-link> |&ndash;&gt;-->
-<!--&lt;!&ndash;      <router-link to="/about">About</router-link>&ndash;&gt;-->
-<!--    </div>-->
     <router-view/>
     </div>
       </div>
@@ -43,6 +39,8 @@
 
 #sidebar{
   background-color: ghostwhite;
+  height: 800px;
+  width: 200px;
 }
 
 </style>

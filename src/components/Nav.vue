@@ -4,20 +4,33 @@
   <b-menu>
     <b-menu-list>
 
-        <b-menu-item label="Dashboard" class="item" tag="router-link" :to="{path: '/'}"></b-menu-item>
+      <div class="navItem">
+       <img src="../assets/icons8-performance-64.png" class="navIcon"> <b-menu-item label="Dashboard" class="item" tag="router-link" :to="{path: '/'}"></b-menu-item>
+      </div>
 
-        <b-menu-item label="Profile" class="item" tag="router-link" :to="{path:'/profile'}"> </b-menu-item>
+      <div class="navItem">
+       <img src="../assets/icons8-customer-64.png" class="navIcon"> <b-menu-item label="Profile" class="item" tag="router-link" :to="{path:'/profile'}"> </b-menu-item>
+      </div>
 
-        <b-menu-item label="Messages" class="item" tag="router-link" :to="{path:'/messages'}"></b-menu-item>
+      <div class="navItem">
+        <img src="../assets/icons8-chat-message-64.png" class="navIcon"> <b-menu-item label="Messages" class="item" tag="router-link" :to="{path:'/messages'}"></b-menu-item>
+      </div>
 
-        <b-menu-item label="Catalogue" class="item" tag="router-link" :to="{path:'/catalogue'}"></b-menu-item>
+      <div class="navItem">
+        <img src="../assets/icons8-ticket-48.png" class="navIcon"> <b-menu-item label="Catalogue" class="item" tag="router-link" :to="{path:'/catalogue'}"></b-menu-item>
+      </div>
 
-       <b-menu-item label="Assets" class="item" tag="router-link" :to="{path:'/assets'}"></b-menu-item>
+      <div class="navItem">
+       <img src="../assets/icons8-new-document-64.png" class="navIcon"> <b-menu-item label="Assets" class="item" tag="router-link" :to="{path:'/assets'}"></b-menu-item>
+      </div>
 
-       <b-menu-item label="Feedback" class="item" tag="router-link" :to="{path: '/feedback'}"></b-menu-item>
+      <div class="navItem">
+       <img src="../assets/icons8-heart-48.png" class="navIcon"> <b-menu-item label="Feedback" class="item" tag="router-link" :to="{path: '/feedback'}"></b-menu-item>
+      </div>
 
-       <b-menu-item label="Configuration" class="item" tag="router-link" :to="{path:'/configuration'}"></b-menu-item>
-
+      <div class="navItem">
+       <img src="../assets/icons8-settings-64.png" class="navIcon"> <b-menu-item label="Configuration" class="item" tag="router-link" :to="{path:'/configuration'}"></b-menu-item>
+      </div>
 <!--    <router-link to="/"><h3 class="item">Dashboard</h3></router-link>-->
 
 <!--    <router-link to="/profile"><h3 class="item">Profile</h3></router-link>-->
@@ -58,17 +71,21 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   text-align: start;
+  border-right: whitesmoke solid 1px;
 }
 
-.item{
+.navItem{
+  display: flex;
+  flex-direction: row;
   padding: 10%;
 }
 
-/*.item::selection{*/
-/*  background-color: darkgrey!important;*/
+.navIcon{
+  height: 35px;
+  width: 35px;
+}
+/*.item{*/
+/*  padding: 10%;*/
 /*}*/
 
-router-link-exact-active {
-  background-color: yellow !important;
-}
 </style>
