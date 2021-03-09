@@ -7,11 +7,11 @@
     <Nav/>
     </div>
     <div class="column"> <!--MAIN-->
-    <div id="nav">
+<!--    <div id="nav">-->
 
-<!--      <router-link to="/">Home</router-link> |-->
-<!--      <router-link to="/about">About</router-link>-->
-    </div>
+<!--&lt;!&ndash;      <router-link to="/">Home</router-link> |&ndash;&gt;-->
+<!--&lt;!&ndash;      <router-link to="/about">About</router-link>&ndash;&gt;-->
+<!--    </div>-->
     <router-view/>
     </div>
       </div>
@@ -37,9 +37,9 @@
   color: #2c3e50;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+/*#sidebar a.router-link-exact-active {*/
+/*  color: #42b983;*/
+/*}*/
 
 #sidebar{
   background-color: ghostwhite;

@@ -1,27 +1,39 @@
 <template>
-  <div class="sidebar" v-bind:style="colorStyle">
+  <div class="sidebar">
+
   <b-menu>
     <b-menu-list>
 
-      <router-link to="/"><b-menu-item label="Dashboard" class="item"></b-menu-item></router-link>
+        <b-menu-item label="Dashboard" class="item" tag="router-link" :to="{path: '/'}"></b-menu-item>
 
-      <router-link to="/profile"><b-menu-item label="Profile" class="item"> </b-menu-item></router-link>
+        <b-menu-item label="Profile" class="item" tag="router-link" :to="{path:'/profile'}"> </b-menu-item>
 
-      <router-link to="/messages"><b-menu-item label="Messages" class="item"> </b-menu-item></router-link>
+        <b-menu-item label="Messages" class="item" tag="router-link" :to="{path:'/messages'}"></b-menu-item>
 
-      <router-link to="/catalogue"><b-menu-item label="Catalogue" class="item"></b-menu-item></router-link>
+        <b-menu-item label="Catalogue" class="item" tag="router-link" :to="{path:'/catalogue'}"></b-menu-item>
 
-     <router-link to="/assets"> <b-menu-item label="Assets" class="item"></b-menu-item></router-link>
+       <b-menu-item label="Assets" class="item" tag="router-link" :to="{path:'/assets'}"></b-menu-item>
 
-     <router-link to="/feedback"> <b-menu-item label="Feedback" class="item"></b-menu-item> </router-link>
+       <b-menu-item label="Feedback" class="item" tag="router-link" :to="{path: '/feedback'}"></b-menu-item>
 
-     <router-link to="/configuration"> <b-menu-item label="Configuration" class="item"></b-menu-item></router-link>
+       <b-menu-item label="Configuration" class="item" tag="router-link" :to="{path:'/configuration'}"></b-menu-item>
 
+<!--    <router-link to="/"><h3 class="item">Dashboard</h3></router-link>-->
 
-    </b-menu-list>
-    <b-menu-list>
+<!--    <router-link to="/profile"><h3 class="item">Profile</h3></router-link>-->
+
+<!--    <router-link to="/messages"><h3 class="item">Messages</h3></router-link>-->
+
+<!--    <router-link to="/catalogue"><h3 class="item">Catalogue</h3></router-link>-->
+
+<!--    <router-link to="/assets"> <h3 class="item">Assets</h3></router-link>-->
+
+<!--    <router-link to="/feedback"> <h3 class="item">Feedback</h3> </router-link>-->
+
+<!--    <router-link to="/configuration"> <h3 class="item">Configuration</h3></router-link>-->
     </b-menu-list>
   </b-menu>
+
   </div>
   </template>
 
@@ -30,7 +42,7 @@ export default {
   name: 'Nav',
   data() {
     return {
-      isActive: true,
+      isActive: false,
       colorStyle: function(){
         return {
           color: '#ffffff'
@@ -43,6 +55,7 @@ export default {
 <style>
 .sidebar{
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   text-align: start;
 }
@@ -51,7 +64,11 @@ export default {
   padding: 10%;
 }
 
-.item::selection{
-  background-color: darkgrey!important;
+/*.item::selection{*/
+/*  background-color: darkgrey!important;*/
+/*}*/
+
+router-link-exact-active {
+  background-color: yellow !important;
 }
 </style>
