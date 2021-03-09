@@ -3,14 +3,14 @@
     <Heading/>
     <div class="columns is-gapless is-multiline is-mobile">
 
-    <div class="is-one-quarter"> <!--SIDEBAR-->
+    <div class="is-one-quarter" id="sidebar"> <!--SIDEBAR-->
     <Nav/>
     </div>
     <div class="column"> <!--MAIN-->
     <div id="nav">
 
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+<!--      <router-link to="/">Home</router-link> |-->
+<!--      <router-link to="/about">About</router-link>-->
     </div>
     <router-view/>
     </div>
@@ -40,10 +40,16 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+#sidebar{
+  background-color: ghostwhite;
+}
+
 </style>
 <script>
 import Heading from "@/components/Heading";
 import Nav from "@/components/Nav"
+
 export default {
   components: {Heading, Nav}
 }

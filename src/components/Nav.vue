@@ -1,21 +1,21 @@
 <template>
-  <div class="sidebar">
+  <div class="sidebar" v-bind:style="colorStyle">
   <b-menu>
     <b-menu-list>
 
-      <b-menu-item icon="account" label="Dashboard"> </b-menu-item>
+      <router-link to="/"><b-menu-item label="Dashboard" class="item"></b-menu-item></router-link>
 
-      <b-menu-item icon="account" label="Profile"> </b-menu-item>
+      <router-link to="/profile"><b-menu-item label="Profile" class="item"> </b-menu-item></router-link>
 
-      <b-menu-item icon="account" label="Messages"> </b-menu-item>
+      <router-link to="/messages"><b-menu-item label="Messages" class="item"> </b-menu-item></router-link>
 
-      <b-menu-item icon="account" label="Catalogue"></b-menu-item>
+      <router-link to="/catalogue"><b-menu-item label="Catalogue" class="item"></b-menu-item></router-link>
 
-      <b-menu-item icon="account" label="Assets"></b-menu-item>
+     <router-link to="/assets"> <b-menu-item label="Assets" class="item"></b-menu-item></router-link>
 
-      <b-menu-item icon="account" label="Feedback"></b-menu-item>
+     <router-link to="/feedback"> <b-menu-item label="Feedback" class="item"></b-menu-item> </router-link>
 
-      <b-menu-item icon="account" label="Configuration"></b-menu-item>
+     <router-link to="/configuration"> <b-menu-item label="Configuration" class="item"></b-menu-item></router-link>
 
 
     </b-menu-list>
@@ -30,7 +30,12 @@ export default {
   name: 'Nav',
   data() {
     return {
-      isActive: true
+      isActive: true,
+      colorStyle: function(){
+        return {
+          color: '#ffffff'
+        }
+      }
     }
   }
 }
@@ -40,5 +45,13 @@ export default {
   display: flex;
   justify-content: flex-start;
   text-align: start;
+}
+
+.item{
+  padding: 10%;
+}
+
+.item::selection{
+  background-color: darkgrey!important;
 }
 </style>
