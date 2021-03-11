@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <h1>This Profile Page</h1>
+  <div class="hello">
+    <h1 class="dashboard-heading">Profile</h1>
   </div>
 </template>
 
@@ -10,3 +10,6 @@ export default{
   // components: Profile
 }
 </script>
+<style>
+
+</style>

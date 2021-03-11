@@ -71,7 +71,7 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   text-align: start;
-  border-right: whitesmoke solid 2px;
+  border-right: #EBEBE6 solid 2px;
 }
 
 .navItem{

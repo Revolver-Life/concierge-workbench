@@ -1,5 +1,7 @@
 <template>
-  <h1>This is Catalogue Page</h1>
+  <div class="hello">
+  <h1 class="dashboard-heading">Catalogue</h1>
+  </div>
 </template>
 
 <script>

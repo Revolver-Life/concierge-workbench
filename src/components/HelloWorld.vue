@@ -16,8 +16,9 @@ export default {
 .hello{
   display: flex;
   justify-content: flex-start;
+  /*flex-direction: column;*/
   padding: 3%;
-  border: #EBEBE6 solid 2px;
+  border: #EBEBE6 solid 1px;
 }
 
 .dashboard-heading{

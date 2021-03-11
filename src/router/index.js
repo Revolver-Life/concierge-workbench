@@ -7,6 +7,8 @@ import Catalogue from '../views/Catalogue.vue'
 import Assets from '../views/Assets.vue'
 import Feedback from '../views/Feedback.vue'
 import Configuration from '../views/Configuration.vue'
+// import Documents from '../components/Assets-Documents.vue'
+// import Experiences from '../components/Assets-Experiences.vue'
 
 Vue.use(VueRouter)
 
@@ -45,7 +47,18 @@ const routes = [
     path: '/configuration',
     name: 'Configuration',
     component: Configuration
-  }
+  },
+  // {
+  //   path: '/assets/documents',
+  //   name: 'Documents',
+  //   component: Documents
+  // },
+  // {
+  //   path: '/experiences',
+  //   name: 'Experiences',
+  //   component: Experiences
+  //
+  // }
 ]
 
 const router = new VueRouter({

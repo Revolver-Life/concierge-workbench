@@ -47,6 +47,8 @@
 <script>
 import Heading from "@/components/Heading";
 import Nav from "@/components/Nav"
+// import Documents from '@/components/Assets-Documents'
+// import Experiences from '@/components/Assets-Experiences'
 
 export default {
   components: {Heading, Nav}

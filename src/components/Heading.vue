@@ -1,6 +1,6 @@
 <template>
   <div class="all" v-bind:style="myStyle">
-    <div class="headingStart"><h1>NOMAD</h1></div>
+    <div class="headingStart"><img class="logo" src="../assets/Nomade_v3.jpg"> <h3 class="nomad-logo">Nomad</h3></div>
 
     <div class="headingEnd"><img class="accountIcon" src="../assets/icons8-test-account-48.png"></div>
 
@@ -12,7 +12,7 @@ export default{
   data: function(){
     return {
       myStyle: {
-        backgroundColor: "#23395d",
+        backgroundColor: "#0d4063",
         color: "#FFFFFF",
       }
     }
@@ -34,6 +34,7 @@ export default{
 .headingStart{
   display: flex;
   justify-content: flex-start;
+  flex-direction: row;
   padding-top: 3%;
   padding-left: 3%;
 
@@ -44,5 +45,17 @@ export default{
   justify-content: flex-end;
   padding-top: 2%;
   padding-right: 2%;
+}
+
+.logo{
+  background-color: inherit;
+  border: none;
+  text-decoration: none;
+}
+
+.nomad-logo{
+  font-weight: 800;
+  font-size: 32px;
+  padding-inline-start: 2%;
 }
 </style>

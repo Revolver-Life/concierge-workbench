@@ -1,5 +1,7 @@
 <template>
-  <h1>This is Messages Page</h1>
+  <div class="hello">
+  <h1 class="dashboard-heading">Customer messages</h1>
+  </div>
 </template>
 
 <script>
